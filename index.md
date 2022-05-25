@@ -1,37 +1,180 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<style>
+		*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Josefin Sans', sans-serif;
 
-You can use the [editor on GitHub](https://github.com/Kalpesh50/mysite1/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+}
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+header{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url(taj1.jfif);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
-### Markdown
+nav{
+	width: 100%;
+	height: 15vh;
+	background: rgba(0,0,0,0.2);
+	color: white; display: flex; justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase; 
+}
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+nav .logo{
+  width: 25%;
+ text-align: center;
 
-```markdown
-Syntax highlighted code block
+}
+nav .menu{
+	width: 40%;
+	display: flex; justify-content: space-around;
+}
+nav .menu a {
+	width: 25%;
+	text-decoration: none; color: white;
+	 font-weight: bold;
+}
+nav .menu a:first-child{
+	color: #00b894;
+}
 
-# Header 1
-## Header 2
-### Header 3
+main{
+	width: 100%;
+	height: 85vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: white;
+}
 
-- Bulleted
-- List
+section{
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+}
 
-[Link](url) and ![Image](src)
-```
+section h3{
+	font-size: 35px;
+	font-weight: 200;
+	letter-spacing: 3px;
+ text-shadow:  1px 1px 2px black;
+}
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+section h1{
+	margin: 30px 0 20px 0; 
+	font-size: 55px;
+	font-weight: 700;
+	text-shadow: 2px 1px 5px black;
+	text-transform: uppercase; 
+}
+section p{
+	font-size: 25px;
+	word-spacing: 2px;
+	margin-bottom: 25px;
+	text-shadow: 1px 1px 1px black;
 
-### Jekyll Themes
+}
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Kalpesh50/mysite1/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+section a{
+	padding: 12px 30px;
+	border-radius: 4px;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration:none;
+	letter-spacing: 1px;
+	transition: all .5s ease;
 
-### Support or Contact
+}
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+section .btnone{
+	/*background-color: #00b894;*/
+	background-color: #fff;
+	color: #000;
+	
+}
+
+.btnone:hover{
+background-color: #00b894;
+color: white;
+
+}
+section .btntwo{
+ background-color: #00b894;
+color: white;
+}
+.btntwo:hover{
+	background-color: #fff;
+	color: #000;
+
+}
+
+.change_content:after{
+	content: '';
+	animation: changetext 10s infinite linear;
+	color: #00b894;
+}
+
+@keyframes changetext{
+	0%{content:"Darjeeling";}
+	20%{content:"Agra";}
+	35%{content:"Jaipur";}
+	60%{content:"Goa";}
+	80%{content:"Mumbai";}
+	100%{content:"Shimla";}
+
+}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo">
+				<h1 class="
+                 animate__animated
+				animate__heartBeat animate__infinite">Mera Bharat</h1>
+			</div>
+			<div class="menu">
+				<a href="#">Home</a>
+				<a href="#" target="-blanck">Gallery</a>
+				<a href="#">About</a>
+				<a href="#">Contact</a>
+				
+			</div>
+			</nav>
+			<main>
+				<section>
+					<h3 class="
+                    animate__animated
+					animate__bounceInDown
+					animate__slower
+					">Welcome to India</h3>
+					<h1>Do come and visit  <span class="change_content"></span></h1>
+					<p class="
+                    animate__animated
+					animate__bounceInUp
+                    animate__slower
+					">India once is not enough</p>
+					<a href="#" class="btnone" >Learn more</a>
+					<a href="#" class="btntwo">Sign up</a>
+				</section>
+			</main>
+		
+	</header>
+
+</body>
+</html>
